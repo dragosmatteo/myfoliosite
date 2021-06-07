@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/* font-family: 'Aladin', cursive; */
-/* font-family: 'Lato', sans-serif; */
 
 * {
     padding: 0;
@@ -169,7 +167,7 @@ a {
     background-image: url('./images/1_Uxe2anex__Tt6WdyrocLTw.jpeg');
     background-repeat:no-repeat;
     background-size: cover;
-    height: 1024px;
+    height: 1100px;
 }
 
 .h21 {
@@ -178,7 +176,68 @@ a {
     font-size: 55px;
 }
 
+.portofoliu__row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+}
 
+.portofoliu__elements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 530px;
+    max-height: 385px;
+    background-color: none;
+    margin-left: 50px;
+}
+
+.site {
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 3px solid rgb(155, 155, 155);
+}
+
+.site:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    transition: 1s all ease-in-out;
+    border: 3px solid transparent;
+}
+
+.site_but {
+    margin-top: 20px;
+}
+
+.siteb {
+    color:#000;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    border: 4px solid red;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.siteb:hover {
+    color:#fff;
+    background-color: rgb(255, 0, 0);
+    transition: 0.3s all ease-out;
+}
 
 /* !Section 3! */
 .section_3 {

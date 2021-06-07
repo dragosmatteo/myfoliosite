@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -252,6 +253,10 @@ a {
 
 .section_3 .eu_img {
     flex: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .section_3 .eu_img .eu {
@@ -261,7 +266,6 @@ a {
 }
 
 .section_3 .eu_img .eu_des1 {
-    text-align: center;
     font-size: 25px;
     font-family:Helvetica, sans-serif;
     font-style: italic;

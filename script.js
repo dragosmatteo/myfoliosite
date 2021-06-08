@@ -20,14 +20,6 @@ const modal = document.querySelector('#simpleModal');
 const closeBtn = document.querySelector('.closeBtn');
 const modalBtn = document.querySelector('#contact')
 
-// !!  Lisen for click 
-modalBtn.addEventListener('click', openModal());
-
-// !! Lisen for close click
-closeBtn.addEventListener('click', closesModal());
-
-// !! Lisen for outside click 
-window.addEventListener('click', clickOutsite());
 
 // !! Function to open modal 
 const openModal = function(){
@@ -40,6 +32,15 @@ const closeModal = function(){
 }
 
 const clickOutsite = function(e){
-    if (e.target == modal) 
-    modal.style.display = 'none';
+  if (e.target == modal) 
+  modal.style.display = 'none';
 }
+
+// !!  Lisen for click 
+modalBtn.addEventListener('click', openModal);
+
+// !! Lisen for close click
+closeBtn.addEventListener('click', closeModal);
+
+// !! Lisen for outside click 
+window.addEventListener('click', clickOutsite);

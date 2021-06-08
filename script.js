@@ -1,4 +1,4 @@
-// !! Dragos Matteo 5.06.2021 Folio
+// !! Claudiu Io 8.06.2021 Folio
 
 // const navbar =  document.querySelector('.navbar');
 // let sticky = navbar.getBoundingClientRect().height;

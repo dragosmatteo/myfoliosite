@@ -14,6 +14,26 @@ $black: #000;
 $red: red;
 $white : #fff;
 
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($white, 100%);
+        color: darken($black, 100%);
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -101,15 +121,13 @@ header {
         }
         
         .str1:hover {
-            box-shadow: 0px 10px 15px rgba(10, 46, 32, 0.4);
-            transition: 0.5s all ease-out;
+            @extend .str:hover;
         }
         
         .but {
             margin-top: 30px
         }
     }
-    
 }
 
 
@@ -179,18 +197,16 @@ header {
     }
 
     .portofoliu__row {
-        display: flex;
         flex-direction: row;
         margin-left: 200px;
         margin-right: 200px;
         margin-top: 70px;
+        display: flex;
         align-items: center;
         justify-content: center;
 
         .portofoliu__elements {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            @include flexCenter;
             max-width: 530px;
             max-height: 385px;
             background-color: none;
@@ -257,9 +273,7 @@ header {
 
     #{&}.eu_img {
         flex: 30%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
+        @include flexCenter;
         flex-direction: column;
 
         .section_3 .eu_img .eu {
@@ -306,10 +320,7 @@ footer {
     width: auto;
     padding-left: 24px;
     padding-right: 24px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter(column);
 
     .str3 {
         font-size: 23px;
@@ -396,9 +407,7 @@ footer {
         }
         
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flexCenter;
 
             .modal-titlu {
                 font-size: 25px;
@@ -458,4 +467,8 @@ footer {
             }
         }
     }
+}
+
+.light {
+    @include theme($light-theme: true);
 }

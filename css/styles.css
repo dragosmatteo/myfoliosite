@@ -18,7 +18,7 @@ header {
     width: 100%;
     background-image:
     linear-gradient(to bottom,  rgba(211, 255, 224, 0.52) 70%, #00ff37 120%),
-    url('./images/pexels-photo-2068975.jpeg');
+    url('/images/1_Uxe2anex__Tt6WdyrocLTw.jpeg');
     background-repeat:no-repeat;
     background-size: cover;
     height: 660px;
@@ -160,7 +160,7 @@ a {
 /* !Section 2! */
 .section_2 {
     width: 100%;
-    background-image: url('./images/1_Uxe2anex__Tt6WdyrocLTw.jpeg');
+    background-image: url('/images/1_Uxe2anex__Tt6WdyrocLTw.jpeg');
     background-repeat:no-repeat;
     background-size: cover;
     height: 1100px;

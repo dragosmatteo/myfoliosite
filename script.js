@@ -18,10 +18,10 @@
 
 const modal = document.querySelector('#simpleModal');
 const closeBtn = document.querySelector('.closeBtn');
-const modalBtn = document.querySelector('#contact')
+const modalBtn = document.querySelector('#contact');
 
 
-// !! Function to open modal 
+// // !! Function to open modal 
 const openModal = function(){
   modal.style.display = 'block';
 }
@@ -44,3 +44,7 @@ closeBtn.addEventListener('click', closeModal);
 
 // !! Lisen for outside click 
 window.addEventListener('click', clickOutsite);
+
+
+// !! Form
+

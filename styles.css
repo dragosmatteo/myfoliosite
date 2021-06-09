@@ -91,6 +91,7 @@ a {
     padding: 10px 20px;
     background-color: red;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .str1:hover {

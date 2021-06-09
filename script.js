@@ -48,3 +48,16 @@ window.addEventListener('click', clickOutsite);
 
 // !! Form
 
+const name = document.querySelector('.name').value;
+const email = document.querySelector('.email').value;
+const modalmess  = document.querySelector('.modal-mess').value;
+const submit = document.querySelector('.modal-submit');
+
+  submit.addEventListener('click', function (e){
+    e.preventDefault();
+    if(name.length < 5 && email.length && modalmess.length < 10) {
+      alert('Please enter content');
+    }
+  });
+
+

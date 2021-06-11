@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import "./modal.css";
+@import "./responsive.css";
 
 * {
     padding: 0;

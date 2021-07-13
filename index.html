@@ -7,7 +7,7 @@
     <meta name="description" content="Site made ablsoult from 0, the sketches made in figma, I made with scss and it's also responsive !!!">
     <link rel="icon" href="./images/images.png" type="image/png">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <link rel="stylesheet" href="./scss/styles.scss"> -->
     <title>Dragos Matteo | Web Developer & Designer.</title>
 </head>
@@ -37,7 +37,7 @@
                     Web Developer, Designer & Editor Video Uneori
                 </p>
 
-            <div class="but">
+            <div class="but" data-aos="fade-up" data-aos-offset="200">
                 <a id="contact"><strong class="str1" >Află mai multe &rarr;</strong></a>
             </div>
          </div>
@@ -53,7 +53,7 @@
             
             <p class="sec1">Eu sunt Dragoș Matteo. Îmi pare bine să te cunosc!</p>
 
-        <div class="minisec1">
+        <div class="minisec1"  data-aos="fade-left" data-duration="2000" data-delay="2000" data-aos-offset="500">
             <div class="sect1">    
                 <img src="./images/Design_fără_titlu__1_-removebg-preview.png" class="im">
             </div>
@@ -63,7 +63,7 @@
             </div>
         </div>   
 
-        <div class="minisec2">
+        <div class="minisec2" data-aos="fade-right" data-duration="2000" data-aos-offset="500">
             <div class="sect3">    
                 <p class="lorem"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  </p>
             </div>
@@ -80,7 +80,7 @@
             <p class="sec1 h21">Some Projects Made From 0</p>
 
             <!-- !Row 1! -->
-            <div class="portofoliu__row">
+            <div class="portofoliu__row" data-aos="flip-left" data-aos-offset="500">
 
                 <div class="portofoliu__elements aos-init aos-animate">
 
@@ -114,7 +114,7 @@
              </div>
 
              <!-- !Row 2! -->
-             <div class="portofoliu__row">
+             <div class="portofoliu__row" data-aos="flip-right" data-aos-offset="500">
 
                 <div class="portofoliu__elements aos-init aos-animate">
 
@@ -150,7 +150,7 @@
         </div>
 
         <!-- !Section 3! -->
-        <div class="section_3" id="despremine">
+        <div class="section_3" id="despremine" data-aos="zoom-in" data-aos-offset="500">
             <div class="eu_img">
               <img src="./images/WhatsApp Image 2021-06-09 at 10.32.47 AM (1) copy copy.jpg" alt="imagine_eu" class="eu"> 
               <p class="eu_des1"><strong>Dragos Matteo</strong> </p>
@@ -192,5 +192,9 @@
     </div>
 
     <!-- <script src="./script.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
